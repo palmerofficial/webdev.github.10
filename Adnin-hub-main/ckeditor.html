@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head><title>create post</title>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Classic editor with default source editing area</title>
+        <script src="https://cdn.ckeditor.com/4.20.1/standard-all/ckeditor.js"></script>
+    </head>
+    <body>
+  <textarea cols="80" id="editor1" name="editor1" rows="10">&lt;p&gt;<type class=""></type></textarea>
+  <script>
+    // We need to turn off the automatic editor creation first.
+    CKEDITOR.disableAutoInline = true;
+
+    CKEDITOR.replace('editor1');
+  </script>
+  <br>
+  <label for="category">Choose a category:</label>
+	<select id="category" name="category">
+		<option value="books">Politics</option>
+		<option value="movies">Gossips</option>
+		<option value="music">podcast</option>
+		<option value="sports">sports</option>
+    <option value="books">Bussiness</option>
+		<option value="movies">Movies</option>
+		<option value="music">Music</option>
+		<option value="sports">Sports</option>
+
+
+
+	</select>
+
+	<label for="password">Password:</label>
+	<input type="password" id="password" name="password" placeholder="Enter your password">
+
+
+  
+	</div>
+  <input type="submit" value="Submit">
+
+
+
+</body>
+</html>
